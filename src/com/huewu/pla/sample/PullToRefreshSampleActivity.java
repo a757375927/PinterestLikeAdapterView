@@ -246,12 +246,18 @@ public class PullToRefreshSampleActivity extends FragmentActivity implements IXL
 
     }
 
+    /**
+     * 下拉刷新
+     */
     @Override
     public void onRefresh() {
         AddItemToContainer(++currentPage, 1);
 
     }
 
+    /**
+     * 加载更多
+     */
     @Override
     public void onLoadMore() {
         AddItemToContainer(++currentPage, 2);
